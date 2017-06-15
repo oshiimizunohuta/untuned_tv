@@ -1,0 +1,6 @@
+[submodule "docs/litrosound"]
+	path = docs/litrosound
+	url = https://github.com/oshiimizunohuta/litrosound
+[submodule "docs/chunklekit"]
+	path = docs/chunklekit
+	url = https://github.com/oshiimizunohuta/chunklekit
