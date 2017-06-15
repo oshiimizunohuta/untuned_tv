@@ -163,7 +163,8 @@ UntunedTV.prototype = {
 				events[0][type][time] = makeLitroElement(type, time, val);
 			}
 		;
-		
+		this.soundEngine.connectOff();
+		this.soundEngine.connectOn();
 		se.setSeekPosition(0);
 		se.stop();
 		se.clearEventsData();
@@ -304,7 +305,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	document.querySelector('#ch').onclick = function(e){
 		var t = new Date();
 		app.seed = t.getTime() % 50;
-		console.log(app.seed);
+//		console.log(app.seed);
 		app.drawNoiseBG(app.seed);
 		app.playNoiseSE(app.seed);
 	}
